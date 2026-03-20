@@ -92,6 +92,7 @@
   background-color: transparent;
   border: none;
   padding: 1.5px 15px;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
@@ -139,7 +140,7 @@
 }
 
 .content-title {
-  color: var(--accent-color);
+  color: var(--decoration-color);
   line-height: 23.4px;
   font-weight: 700;
   letter-spacing: 0%;
@@ -205,12 +206,6 @@
 }
 
 @media (width >=768px) {
-  :root {
-    --padding: 20px;
-    --gap-page: 60px;
-    --gap-content: 80px;
-    --gap-images: 20px;
-  }
 
   .title {
     margin-left: -20px;
@@ -221,27 +216,22 @@
     max-width: calc(50svw - 20px);
   }
 
-  .why {
+  .what {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .what articel:nth-child(2) {
+    grid-column: 1;
+  }
+
+  .why,
+  .how {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
   }
 
   .why .content-title {
     grid-row: span 2;
-  }
-
-  .what {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-  }
-
-  .what div {
-    grid-column: span 3;
-  }
-
-  .how {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
   }
 
   .how .content-title {
@@ -291,7 +281,7 @@
     grid-template-rows: auto;
   }
 
-  .what div {
+  .what articel {
     grid-column: inherit;
     grid-row: 2 / 3;
   }

@@ -13,8 +13,17 @@
   --main-title-color: #DB00FF;
   --title-color: #000028;
   --bg-color: #000028;
-  --bg-image: url(/images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
   --gap-page: 40px;
   --gap-content: 50px;
   --gap-images: 10px;
+}
+
+@media (width >=768px) {
+  :root {
+    --padding: 20px;
+    --gap-page: 60px;
+    --gap-content: 80px;
+    --gap-images: 20px;
+  }
 }
