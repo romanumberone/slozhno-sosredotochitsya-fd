@@ -184,7 +184,7 @@
 .content-section,
 .content-section-list {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 
 .content__image {
